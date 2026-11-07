@@ -115,3 +115,7 @@ Unity.SpaceGod's own bindings, unchanged (in game, H / F1 shows them all).
 docs/MIGRATION.md (how the port was made), docs/FAITHFULNESS.md, docs/PERSISTENCE.md and docs/RACE.md (the C++ vs C#
 race) are kept as the record of `Unreal.SpaceGod`; they still describe the C# track, which now lives in
 SpaceGod.Unreal.CSharp. docs/USER_STORIES.md is Unreal.SpaceGod's ticket log as of the split.
+
+## Headless
+
+The shared, off-by-default `--headless` mode (no window, no sound, one `MINDATTIC_HEADLESS_READY` log line) comes from the `MindAtticShared` plugin in `../Unreal.Shared`, enabled in the .uproject. Run `./tools/play-headless.ps1 -Wait` to start the game that way from the editor binaries. The game itself has no headless opt-in beyond the plugin (archived).
